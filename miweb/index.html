@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,36 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <p>EEsta es una página web de ejemplo creada con Docker Compose y Nginx.</p>
+        <section id="home">
+            <h1>Bienvenido a Mi Página Web</h1>
+            <p>Esta es una página web de ejemplo creada con Docker Compose y Nginx.</p>
+            <button id="show-more">Mostrar más</button>
+            <div id="more-info" style="display: none;">
+                <p>Este es un texto adicional que se muestra al hacer clic en el botón.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>Acerca de</h2>
+            <p>Esta página web es un ejemplo de cómo crear una aplicación web básica utilizando Docker.</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarnos a través de <a href="mailto:info@example.com">info@example.com</a>.</p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Mi Página Web</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
